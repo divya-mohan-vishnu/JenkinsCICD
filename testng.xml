@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite">
+<parameter name="testType" value="${testType}" />
+    <test name="UI Tests">           
+        <classes>
+            <class name="com.testautomation.tests.uiTestSuiteRunner"/>
+        </classes>
+    </test> 
+    <test name="API Tests">        
+        <classes>
+            <class name="com.testautomation.tests.apiTestSuiteRunner"/>
+        </classes>
+    </test>
+    </suite>
